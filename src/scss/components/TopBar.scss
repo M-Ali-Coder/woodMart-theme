@@ -25,7 +25,6 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      flex: 1;
 
       // Social meida
       .social-media {
@@ -62,7 +61,7 @@
 }
 
 // Media query
-@media screen and (max-width: $breakpoint-lg) {
+@media screen and (max-width: $custom-breakpoint) {
   .top-bar-wrapper {
     padding: 10px 0;
 
@@ -76,6 +75,10 @@
     .left-side,
     .links {
       display: none !important;
+    }
+
+    .social-media {
+      margin-left: 45px;
     }
   }
 }

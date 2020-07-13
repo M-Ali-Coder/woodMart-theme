@@ -6,15 +6,16 @@
   margin: 0 auto;
 }
 
-@media screen and(min-width: $breakpoint-xl) {
+@media screen and(max-width: $custom-breakpoint) {
   .container {
-    width: 1400px !important;
+    width: 95% !important;
   }
 }
 
 /*
   ================= FLEX BOX =================
 */
+
 .flex {
   display: flex;
 }
@@ -45,4 +46,12 @@
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+/*
+  ================= POSITIONS =================
+*/
+
+.relative {
+  position: relative;
 }

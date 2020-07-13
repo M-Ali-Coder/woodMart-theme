@@ -1,0 +1,149 @@
+.main-header {
+  border-bottom: 1px solid #9e9e9e30;
+  padding: 30px 0;
+
+  // Main header content
+  .main-header-content {
+    .side-menu,
+    .products-cart {
+      display: none;
+    }
+
+    // Logo
+    .logo {
+      flex: 1;
+      svg {
+        max-width: 245px;
+      }
+    }
+
+    // Search Products
+    .search-products {
+      flex: 2;
+      border: 2px solid #9e9e9e30;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+
+      // input
+      input {
+        padding: 10px 8px;
+        color: #848484;
+        border: none;
+        width: 100%;
+        outline: 0;
+      }
+
+      // Select
+      select {
+        outline: none;
+        padding: 10px 0;
+        border: none;
+        border-left: 1px solid #9e9e9e30;
+        text-align: center;
+        color: #848484;
+        font-size: 14px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      // Search icon
+      .search-icon {
+        display: block;
+        padding: 10px;
+        border-left: 1px solid #9e9e9e30;
+        color: #848484;
+      }
+    }
+
+    // User action
+    .user-action {
+      flex: 1;
+      // User register
+      .register {
+        margin-right: 20px;
+        a {
+          text-transform: uppercase;
+          color: #4c4444;
+          font-size: 14px;
+          margin-left: 12px;
+          font-weight: 500;
+        }
+      }
+
+      // Shopping cart
+      .shopping-cart {
+        width: 100px;
+
+        a {
+          color: #848484;
+          font-weight: 700;
+        }
+
+        // product in cart
+        .cart-count {
+          position: absolute;
+          background: $green;
+          color: #fff;
+          font-weight: 100;
+          height: 15px;
+          width: 15px;
+          text-align: center;
+          font-size: 13px;
+          border-radius: 50%;
+          top: -17px;
+          line-height: 15px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Mobile and tables Main header
+.gerneral-header-wrapper {
+  background-color: #fff;
+  display: none;
+  border-bottom: 1px solid rgba(232, 232, 232, 1);
+
+  .menu-icon {
+    font-size: 16px;
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .logo {
+    svg {
+      width: 150px;
+    }
+  }
+
+  .shopping-cart {
+    .cart-count {
+      position: absolute;
+      background: $green;
+      color: #fff;
+      font-weight: 100;
+      height: 15px;
+      width: 15px;
+      text-align: center;
+      font-size: 13px;
+      border-radius: 50%;
+      top: -10px;
+      line-height: 15px;
+      right: 0;
+    }
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .main-header {
+    display: none !important;
+  }
+  .gerneral-header-wrapper {
+    display: flex;
+  }
+}
