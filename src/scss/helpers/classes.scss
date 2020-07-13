@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-@media screen and(max-width: $custom-breakpoint) {
+@media screen and(max-width: $breakpoint-xl) {
   .container {
     width: 95% !important;
   }
