@@ -1,0 +1,48 @@
+/*
+  ================= CONTAINER =================
+*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and(min-width: $breakpoint-xl) {
+  .container {
+    width: 1400px !important;
+  }
+}
+
+/*
+  ================= FLEX BOX =================
+*/
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

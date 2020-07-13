@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// App font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto:wght@700&display=swap");
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 5000px;
+}
+
+// Helpers
+@import "./helpers/variables.scss";
+@import "./helpers/classes.scss";
+
+// Components
+@import "./components/TopBar.scss";
