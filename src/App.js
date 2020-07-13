@@ -3,6 +3,7 @@ import "./scss/App.scss";
 import TopBar from "./components/TopBar";
 import AppMainHeader from "./components/AppMainHeader";
 import AppHeaderNav from "./components/AppHeaderNav";
+import ShoppingCartSideBar from "./components/ShoppingCartSideBar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TopBar />
       <AppMainHeader />
       <AppHeaderNav />
+      <ShoppingCartSideBar />
     </div>
   );
 }
