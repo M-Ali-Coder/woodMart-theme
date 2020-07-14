@@ -4,6 +4,8 @@ import TopBar from "./components/TopBar";
 import AppMainHeader from "./components/AppMainHeader";
 import AppHeaderNav from "./components/AppHeaderNav";
 import ShoppingCartSideBar from "./components/ShoppingCartSideBar";
+import { Switch, Route } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
@@ -12,6 +14,10 @@ function App() {
       <AppMainHeader />
       <AppHeaderNav />
       <ShoppingCartSideBar />
+
+      <Switch>
+        <Route exact path="/" render={() => <HomePage />} />
+      </Switch>
     </div>
   );
 }

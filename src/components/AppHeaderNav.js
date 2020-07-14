@@ -19,7 +19,7 @@ class AppHeaderNav extends React.Component {
     super(props);
 
     this.state = {
-      toggleCategorySideMenu: true,
+      toggleCategorySideMenu: false,
     };
   }
 
