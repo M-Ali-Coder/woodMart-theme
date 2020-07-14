@@ -24,3 +24,11 @@
     gap: 20px;
   }
 }
+
+@media screen and(max-width: $breakpoint-lg) {
+  .features-products-section-wrapper {
+    .section-content-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

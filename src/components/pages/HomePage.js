@@ -9,8 +9,7 @@ class HomePage extends React.Component {
         <FeaturesCategorySection />
         <FeaturesProductsSection
           title="Features Products"
-          subtitle="Visit our shop to see amazing creations from our designers.
-"
+          subtitle="Visit our shop to see amazing creations from our designers."
         />
       </div>
     );

@@ -1,102 +1,137 @@
 .single-product {
-  position: relative;
-  margin-bottom: 40px;
+  padding: 10px;
+  // margin-bottom: 40px;
+
   .single-product-wrapper {
-    overflow: hidden;
     background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
-      .hidden-product-details {
+      .fade-in-details {
         visibility: visible;
         opacity: 1;
-        transition: all 0.3s ease;
-        bottom: 0;
       }
     }
 
     .product-img-wrapper {
-      position: relative;
+      margin-bottom: 15px;
+
       img {
         width: 100%;
-        height: auto;
-      }
-
-      .product-offers {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: var(--green);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 50px;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: 700;
-        font-size: 14px;
+        height: 100%;
+        display: block;
       }
     }
 
     .visiable-product-details {
       text-align: center;
+
       .product-name {
-        margin: 6px 0;
-        color: #333;
+        margin-bottom: 9px;
+        color: #5c5c5c;
         font-weight: 500;
         display: block;
+        font-size: 0.8rem;
       }
+
       .product-category {
-        color: gray;
-        text-transform: uppercase;
-        font-size: 14px;
-        margin-bottom: 5px;
         display: block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
       }
 
       .product-price-range {
         display: flex;
         justify-content: center;
-        color: var(--green);
+        color: $green;
         font-weight: 600;
+        font-size: 16px;
       }
     }
 
-    .hidden-product-details {
-      position: absolute;
-      padding: 20px 15px;
-      z-index: 9999;
-      background: #fff;
-      width: 100%;
+    .fade-in-details {
+      font-size: 0.7rem;
+      padding: 10px;
       text-align: center;
+      line-height: 1.5;
+      position: absolute;
+      bottom: -75px;
+      left: -10px;
+      right: -10px;
       visibility: hidden;
       opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: 9999;
+      background-color: #fff;
 
       p {
-        font-size: 14px;
-        color: gray;
+        color: #777;
       }
 
-      .shopping-cart-actions {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
+      .user-actions {
+        margin-top: 25px;
 
-        a {
-          i {
-            color: #000;
-            font-size: 20px;
+        form {
+          button {
+            @include appCustomBtn($green, #fff, 10px 20px);
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 0.7rem;
           }
         }
 
-        #view-product {
-          background: #83b735;
-          padding: 8px 20px;
-          color: #fff;
-          text-transform: uppercase;
-          font-size: 12px;
-          font-weight: 600;
+        svg {
+          cursor: pointer;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .avilables-offers {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      .new-offer {
+        @include offerSpan($boldGreen, 50px, 50px, #fff, 12px);
+      }
+      .hot-offer {
+        @include offerSpan($red, 50px, 50px, #fff, 12px);
+      }
+      .sale-offer {
+        @include offerSpan($green, 50px, 50px, #fff, 12px);
+      }
+    }
+  }
+}
+
+@media screen and(max-width:$breakpoint-lg) {
+  .single-product {
+    .single-product-wrapper {
+      .visiable-product-details {
+        font-size: 14px !important;
+
+        a {
+          font-size: 14px !important;
+        }
+
+        a:last-of-type {
+          font-size: 12px !important;
+        }
+      }
+      .fade-in-details {
+        display: none !important;
+      }
+      .avilables-offers {
+        span {
+          width: 40px !important;
+          height: 40px !important;
+          line-height: 40px !important;
+          font-size: 12px !important;
         }
       }
     }

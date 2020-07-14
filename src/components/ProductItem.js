@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaRegHeart, FaSearch } from "react-icons/fa";
 
 const ProductItem = ({
   productName,
@@ -9,6 +10,7 @@ const ProductItem = ({
   price,
   isNew,
   isSale,
+  isHot,
   availableColors,
 }) => {
   return (
@@ -18,8 +20,6 @@ const ProductItem = ({
           <Link to="#">
             <img src={image} alt="" />
           </Link>
-
-          <h1 className="product-offers">sale</h1>
         </div>
 
         <div className="visiable-product-details">
@@ -30,26 +30,28 @@ const ProductItem = ({
             {category}
           </Link>
           <div className="product-price-range">
-            <div className="min-price">{price}</div>
+            <div className="min-price">${price}.00</div>
           </div>
         </div>
 
-        <div className="hidden-product-details">
+        <div className="fade-in-details">
           <div className="product-description">
             <p>{description}</p>
-
-            <div className="shopping-cart-actions">
-              <Link tag="a" to="/wishlist">
-                <i className="far fa-heart"></i>
-              </Link>
-              <Link tag="a" to="/product-page" id="view-product">
-                view products
-              </Link>
-              <Link tag="a" to="/search-product">
-                <i className="fas fa-search"></i>
-              </Link>
-            </div>
           </div>
+
+          <div className="user-actions flex-center-around">
+            <FaRegHeart />
+            <form>
+              <button>select options</button>
+            </form>
+            <FaSearch />
+          </div>
+        </div>
+
+        <div className="avilables-offers">
+          {isNew && <span className="new-offer">new</span>}
+          {isHot && <span className="hot-offer">hot</span>}
+          {isSale && <span className="sale-offer">sale</span>}
         </div>
       </div>
     </div>

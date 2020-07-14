@@ -28,3 +28,18 @@
   cursor: pointer;
   text-align: center;
 }
+
+@mixin offerSpan($bg, $width, $height, $color, $fSize) {
+  display: block;
+  background-color: $bg;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  color: $color;
+  text-align: center;
+  line-height: $height;
+  font-size: $fSize;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
