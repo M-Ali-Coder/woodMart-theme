@@ -1,0 +1,26 @@
+.features-products-section-wrapper {
+  margin: 80px auto;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h4 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: #2d2a2a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.7rem;
+      color: #777;
+    }
+  }
+
+  .section-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
