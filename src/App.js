@@ -9,6 +9,7 @@ import HomePage from "./components/pages/HomePage";
 import AppFooter from "./components/AppFooter";
 import BlogsPage from "./components/pages/BlogsPage";
 import ShopPage from "./components/ShopPage";
+import PagesPage from "./components/PagesPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/" render={() => <HomePage />} />
         <Route path="/blogs/news" render={() => <BlogsPage />} />
         <Route path="/shop" render={() => <ShopPage />} />
+        <Route path="/pages" render={() => <PagesPage />} />
       </Switch>
 
       <AppFooter />
