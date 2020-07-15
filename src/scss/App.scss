@@ -21,13 +21,14 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 5000px;
+  // height: 5000px;
 }
 
 // Helpers
 @import "./helpers/variables.scss";
 @import "./helpers/mixins.scss";
 @import "./helpers/classes.scss";
+@import "./helpers/loop.scss";
 
 // Components
 @import "./components/TopBar.scss";
@@ -37,3 +38,9 @@ body {
 @import "./components/FeaturesCategorySection.scss";
 @import "./components/ProductItem.scss";
 @import "./components/FeaturesProductsSection.scss";
+@import "./components/HomePageProductSlider.scss";
+@import "./components/AboutWoodMart.scss";
+@import "./components/JoinOurNewsSection.scss";
+@import "./components/OurLatestNews.scss";
+@import "./components/PostBlogItem.scss";
+@import "./components/AppFooter.scss";

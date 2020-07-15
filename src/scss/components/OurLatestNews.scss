@@ -1,0 +1,25 @@
+.our-latest-new-section-wrapper {
+  .section-header {
+    p {
+      font-size: 0.7rem;
+      color: #777;
+      margin-top: 10px;
+    }
+  }
+  .content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and(max-width: $breakpoint-md) {
+  .our-latest-new-section-wrapper .content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and(max-width: $breakpoint-sm) {
+  .our-latest-new-section-wrapper .content {
+    grid-template-columns: 1fr !important;
+  }
+}

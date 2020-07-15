@@ -6,6 +6,7 @@ import AppHeaderNav from "./components/AppHeaderNav";
 import ShoppingCartSideBar from "./components/ShoppingCartSideBar";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
+import AppFooter from "./components/AppFooter";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
       </Switch>
+
+      <AppFooter />
     </div>
   );
 }

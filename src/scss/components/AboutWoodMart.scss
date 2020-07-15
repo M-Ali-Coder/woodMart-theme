@@ -1,0 +1,41 @@
+.about-woodmart-wrapper {
+  display: flex;
+  align-items: center;
+  background-image: url("https://woodmartcdn-cec2.kxcdn.com/wp-content/uploads/2015/12/about-us2-2.jpg?id=9082");
+  background-size: cover;
+  height: 400px;
+  background-position: cover;
+
+  .about-woodmart-content {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: #333;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .related-links {
+      margin-top: 10px;
+
+      a:first-of-type {
+        @include appCustomBtn($green, #fff, 10px);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        margin-right: 10px;
+      }
+
+      a:last-of-type {
+        @include appCustomBtn(transparent, #000, 10px);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        border: 1px solid #80808075;
+      }
+    }
+  }
+}

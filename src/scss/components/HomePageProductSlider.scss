@@ -1,0 +1,13 @@
+.home-page-slider-wrapper {
+  border: 1px solid red;
+  margin: 100px auto;
+  height: 600px;
+
+  .swiper-container {
+    border: 1px solid red !important;
+
+    .slider-content-wrapper {
+      height: 100% !important;
+    }
+  }
+}
