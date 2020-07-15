@@ -1,0 +1,16 @@
+.app-pages-banner-wrapper {
+  // border: 1px solid red;
+  background-size: center;
+
+  .banner-content {
+    border: 1px solid green;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+}
