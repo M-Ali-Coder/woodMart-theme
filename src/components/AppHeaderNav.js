@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaChevronRight, FaBars } from "react-icons/fa";
+import { FaChevronRight, FaBars, FaChevronDown } from "react-icons/fa";
 import { ReactComponent as Chef } from "../assets/svg/chef.svg";
 import { ReactComponent as Furniture } from "../assets/svg/teddy-bear.svg";
 import { ReactComponent as Cooking } from "../assets/svg/chef.svg";
@@ -400,10 +400,10 @@ class AppHeaderNav extends React.Component {
                 </Link>
               </li>
               <li className="show-shop-mega-menu">
-                <Link tag="a" to="/shop">
-                  shop
+                <Link tag="a" to="/shop" className="flex-center">
+                  <span className="mr-right-5">shop</span>
+                  <FaChevronDown />
                 </Link>
-                <i className="fas fa-chevron-down"></i>
 
                 <div className="shop-mega-menu-wrapper">
                   <div className="container">
@@ -508,10 +508,10 @@ class AppHeaderNav extends React.Component {
                 </div>
               </li>
               <li className="show-blog-menu">
-                <Link tag="a" to="/blogs">
-                  blog
+                <Link tag="a" to="/blogs/news" className="mr-right-5">
+                  <span className="mr-right-5">blog</span>
+                  <FaChevronDown />
                 </Link>
-                <i className="fas fa-chevron-down"></i>
 
                 <div className="blog-hovered-menu">
                   <div className="blog-menu-wrapper">

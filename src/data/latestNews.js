@@ -52,7 +52,7 @@ const LATEST_NEWS = [
     postTime: "24",
   },
   {
-    id: 5,
+    id: 6,
     postTitle: "title",
     postImage: Image6,
     postedBy: "some one",

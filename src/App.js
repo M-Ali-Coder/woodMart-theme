@@ -7,6 +7,7 @@ import ShoppingCartSideBar from "./components/ShoppingCartSideBar";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
 import AppFooter from "./components/AppFooter";
+import BlogsPage from "./components/pages/BlogsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
+        <Route exact path="/blogs/news" render={() => <BlogsPage />} />
       </Switch>
 
       <AppFooter />

@@ -1,0 +1,23 @@
+.blog-page-wrapper {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and(max-width: $breakpoint-md) {
+  .blog-page-wrapper {
+    .content {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+}
+
+@media screen and(max-width: $breakpoint-sm) {
+  .blog-page-wrapper {
+    .content {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
