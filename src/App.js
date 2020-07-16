@@ -11,10 +11,12 @@ import BlogsPage from "./components/pages/BlogsPage";
 import ShopPage from "./components/ShopPage";
 import PagesPage from "./components/PagesPage";
 import CartPage from "./components/CartPage";
+import ScrollNav from "./components/ScrollNav";
 
 function App() {
   return (
     <div className="App">
+      <ScrollNav />
       <TopBar />
       <AppMainHeader />
       <AppHeaderNav />
@@ -28,7 +30,6 @@ function App() {
         <Route path="/cart" render={() => <CartPage />} />
         <Route render={() => <h1> 404 page</h1>} />
       </Switch>
-
       <AppFooter />
     </div>
   );
