@@ -1,4 +1,4 @@
-.shopping-cart-side-menu-content {
+.user-register-side-menu-content {
   transition: all 0.5s ease-in-out;
   background-color: #fff;
   position: fixed;
@@ -13,7 +13,7 @@
   z-index: 9999;
   overflow: hidden;
 
-  .shopping-cart-header {
+  .menu-header {
     .header {
       padding: 20px;
       border-bottom: 1px solid rgba(129, 129, 129, 0.2);
@@ -24,30 +24,34 @@
       }
     }
 
-    .shopping-cart-products {
+    #user-login-form {
       padding: 20px;
 
-      img {
-        display: block;
-        width: 75px;
-        height: 75px;
-        margin-right: 15px;
+      input {
+        margin-top: 20px;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        outline: 0;
+        border: 1px solid #9e9e9e30;
       }
 
-      .about-product {
-        font-size: 0.8rem;
+      button {
+        margin-top: 20px;
+        width: 100%;
+        @include appCustomBtn($green, #fff, 15px 0);
+        border: none;
+      }
+    }
 
-        a {
-          color: #777;
-          font-weight: 600;
-        }
+    .create-account {
+      padding: 0 20px;
 
-        span {
-          color: $green;
-          font-weight: 500;
-          margin-top: 10px;
-          font-size: 14px;
-        }
+      a {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 0.7rem;
+        border-bottom: 1px dotted;
       }
     }
   }
@@ -69,7 +73,7 @@
       }
     }
 
-    .cart-btns-group {
+    .menu-btns-group {
       margin-top: 30px;
 
       a {
@@ -79,13 +83,12 @@
         font-weight: 500;
       }
 
-      a:first-of-type {
-        @include appCustomBtn(#f7f7f7, #000, 15px 0);
+      .sing-in-with-facebook {
+        @include appCustomBtn(#3b5998, #fff, 15px 0);
       }
 
-      a:last-of-type {
-        @include appCustomBtn($green, #fff, 15px 0);
-        margin-top: 20px;
+      .sing-in-with-google {
+        @include appCustomBtn(#4285f4, #fff, 15px 0);
       }
     }
   }

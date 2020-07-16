@@ -8,6 +8,11 @@ class AppMainHeader extends React.Component {
     const content = document.querySelector(".shopping-cart-side-menu-content");
     content.style.right = "0";
   }
+
+  showUserSideMenu() {
+    const content = document.querySelector(".user-register-side-menu-content");
+    content.style.right = "0";
+  }
   render() {
     return (
       <>
@@ -40,9 +45,9 @@ class AppMainHeader extends React.Component {
               </div>
               {/* <!-- User action --> */}
               <div className="user-action flex-center-around">
-                <div className="register">
-                  <Link to="#">login</Link>
-                  <Link to="#">register</Link>
+                <div className="register text-uppercase" onClick={() => this.showUserSideMenu()}>
+                  <span>Login</span>
+                  <span>register</span>
                 </div>
                 <div className="shopping-cart flex-center-between">
                   <Link to="#">

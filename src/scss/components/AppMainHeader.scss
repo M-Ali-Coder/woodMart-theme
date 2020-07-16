@@ -64,12 +64,10 @@
       // User register
       .register {
         margin-right: 20px;
-        a {
-          text-transform: uppercase;
-          color: #4c4444;
-          font-size: 14px;
-          margin-left: 12px;
-          font-weight: 500;
+
+        span {
+          font-size: 0.7rem;
+          margin: 0 5px;
         }
       }
 

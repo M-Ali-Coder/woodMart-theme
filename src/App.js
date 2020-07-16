@@ -12,6 +12,7 @@ import ShopPage from "./components/ShopPage";
 import PagesPage from "./components/PagesPage";
 import CartPage from "./components/CartPage";
 import ScrollNav from "./components/ScrollNav";
+import UserRegisterSideBar from "./components/UserRegisterSideBar";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <AppMainHeader />
       <AppHeaderNav />
       <ShoppingCartSideBar />
+      <UserRegisterSideBar />
 
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
