@@ -21,7 +21,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 5000px;
+  // height: 5000px;
 }
 
 // Helpers
@@ -51,3 +51,4 @@ body {
 // Pages
 @import "./components/ShopPage.scss";
 @import "./components/PagesPage.scss";
+@import "./components/CartPage.scss";

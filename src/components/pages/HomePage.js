@@ -2,9 +2,9 @@ import React from "react";
 import FeaturesCategorySection from "../FeaturesCategorySection";
 import FeaturesProductsSection from "../FeaturesProductsSection";
 import HomePageSubCarousel from "../HomePageSubCarousel";
-// import AboutMoodMart from "../AboutMoodMart";
-// import JoinOurNewsSection from "../JoinOurNewsSection";
-// import OurLatestNews from "../OurLatestNews";
+import AboutMoodMart from "../AboutMoodMart";
+import JoinOurNewsSection from "../JoinOurNewsSection";
+import OurLatestNews from "../OurLatestNews";
 
 class HomePage extends React.Component {
   componentDidMount() {
@@ -18,10 +18,10 @@ class HomePage extends React.Component {
           title="Features Products"
           subtitle="Visit our shop to see amazing creations from our designers."
         />
-        {/* <AboutMoodMart /> */}
-        {/* <JoinOurNewsSection /> */}
-        {/* <OurLatestNews /> */}
         <HomePageSubCarousel />
+        <AboutMoodMart />
+        <JoinOurNewsSection />
+        <OurLatestNews />
       </div>
     );
   }
