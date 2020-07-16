@@ -6,7 +6,7 @@ import AppHeaderNav from "./components/AppHeaderNav";
 import ShoppingCartSideBar from "./components/ShoppingCartSideBar";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
-import AppFooter from "./components/AppFooter";
+// import AppFooter from "./components/AppFooter";
 import BlogsPage from "./components/pages/BlogsPage";
 import ShopPage from "./components/ShopPage";
 import PagesPage from "./components/PagesPage";
@@ -24,9 +24,10 @@ function App() {
         <Route path="/blogs/news" render={() => <BlogsPage />} />
         <Route path="/shop" render={() => <ShopPage />} />
         <Route path="/pages" render={() => <PagesPage />} />
+        <Route render={() => <h1> 404 page</h1>} />
       </Switch>
 
-      <AppFooter />
+      {/* <AppFooter /> */}
     </div>
   );
 }

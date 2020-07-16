@@ -17,34 +17,23 @@ const ProductItem = ({
     <div className="single-product">
       <div className="single-product-wrapper">
         <div className="product-img-wrapper">
-          <Link to="#">
-            <img src={image} alt="" />
-          </Link>
-        </div>
+          <img src={image} alt="product" />
 
-        <div className="visiable-product-details">
-          <Link to="#" className="product-name">
-            {productName}
-          </Link>
-          <Link to="#" className="product-category">
-            {category}
-          </Link>
-          <div className="product-price-range">
-            <div className="min-price">${price}.00</div>
-          </div>
-        </div>
+          {/* product details */}
+          <div className="hovered-product-quick-details text-center">
+            <div className="product-name">
+              <Link to="#">{productName}</Link>
+            </div>
+            <div className="category">{category}</div>
+            <div className="price">${price}.00</div>
 
-        <div className="fade-in-details">
-          <div className="product-description">
-            <p>{description}</p>
-          </div>
-
-          <div className="user-actions flex-center-around">
-            <FaRegHeart />
-            <form>
-              <button>select options</button>
-            </form>
-            <FaSearch />
+            <div className="select-options flex-center-between">
+              <FaRegHeart />
+              <form>
+                <button>select option</button>
+              </form>
+              <FaSearch />
+            </div>
           </div>
         </div>
 

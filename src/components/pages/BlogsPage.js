@@ -11,6 +11,11 @@ class BlogsPage extends React.Component {
       posts: LATEST_NEWS,
     };
   }
+
+  componentDidMount() {
+    document.title = "WoodMart || Blog Page";
+  }
+
   render() {
     const { posts } = this.state;
     const blogBackground =

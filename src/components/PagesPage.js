@@ -17,6 +17,10 @@ class PagesPage extends React.Component {
     };
   }
 
+  componentDidMount() {
+    document.title = "WoodMart || Pages ELements Page";
+  }
+
   render() {
     const { activeTab } = this.state;
     const blogBg =

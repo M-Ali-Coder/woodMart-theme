@@ -21,7 +21,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  // height: 5000px;
+  height: 5000px;
 }
 
 // Helpers
@@ -46,5 +46,8 @@ body {
 @import "./components/AppFooter.scss";
 @import "./components/BlogPage.scss";
 @import "./components/AppPageBanner.scss";
+@import "./components/HomePageSubCarousel.scss";
+
+// Pages
 @import "./components/ShopPage.scss";
 @import "./components/PagesPage.scss";

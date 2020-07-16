@@ -23,6 +23,10 @@ class ShopPage extends React.Component {
     };
   }
 
+  componentDidMount() {
+    document.title = "WoodMart || Shop Page";
+  }
+
   render() {
     const { posts } = this.state;
     const blogBackground =

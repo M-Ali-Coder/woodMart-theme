@@ -395,12 +395,10 @@ class AppHeaderNav extends React.Component {
             </div>
             <ul className="pages-links">
               <li>
-                <Link tag="a" to="/">
-                  home
-                </Link>
+                <Link to="/">home</Link>
               </li>
               <li className="show-shop-mega-menu">
-                <Link tag="a" to="/shop" className="flex-center">
+                <Link to="/shop" className="flex-center">
                   <span className="mr-right-5">shop</span>
                   <FaChevronDown />
                 </Link>
@@ -508,7 +506,7 @@ class AppHeaderNav extends React.Component {
                 </div>
               </li>
               <li className="show-blog-menu">
-                <Link tag="a" to="/blogs/news" className="mr-right-5">
+                <Link to="/blogs/news" className="mr-right-5">
                   <span className="mr-right-5">blog</span>
                   <FaChevronDown />
                 </Link>
@@ -597,19 +595,13 @@ class AppHeaderNav extends React.Component {
                 </div>
               </li>
               <li>
-                <Link tag="a" to="/pages">
-                  pages
-                </Link>
+                <Link to="/pages">pages</Link>
               </li>
               <li>
-                <Link tag="a" to="/element">
-                  element
-                </Link>
+                <Link to="#">element</Link>
               </li>
               <li>
-                <Link tag="a" to="/buy">
-                  buy
-                </Link>
+                <Link to="/dfasdfasfsf">buy</Link>
               </li>
             </ul>
             <div className="spcial-offer">

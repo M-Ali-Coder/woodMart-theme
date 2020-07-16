@@ -18,6 +18,49 @@
     }
   }
 
+  .tabs-swither {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    & > div {
+      margin: 0 15px;
+      text-transform: uppercase;
+      color: #33333391;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        &::after {
+          transform: translateX(0) !important;
+        }
+        color: #000 !important;
+      }
+
+      &::after {
+        transition: all 0.3s ease-in-out;
+        content: "";
+        height: 2px;
+        background-color: $green;
+        display: block;
+        transform: translateX(-100%);
+      }
+
+      &.active {
+        color: #000;
+        &::after {
+          content: "";
+          height: 2px;
+          background-color: $green;
+          display: block;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
   .section-content-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
